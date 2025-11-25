@@ -127,7 +127,7 @@ Output: `data/segments/store_segments.csv`
 # 🖼 Power BI Dashboard – Screenshots
 
 ### Full Dashboard Overview  
-![Dashboard Overview](model2-demand-elasticity/powerbi/screenshots/dashboard_overview.png)
+![Dashboard Overview]  (model2-demand-elasticity/powerbi/KPI Cards.png)  
 
 ### KPI Cards  
 ![KPI Cards](model2-demand-elasticity/powerbi/screenshots/kpi_cards.png)
