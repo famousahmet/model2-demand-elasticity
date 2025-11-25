@@ -93,53 +93,7 @@ python scripts/store_clustering.py
 powerbi/Model2_Dashboard.pbix
 Replace dataset path if needed.
 
-🖼 Power BI Dashboard – Screenshots
-Full Dashboard Overview
 
-KPI Cards
-
-Scenario Controls (Slicers)
-
-Sales Trend by Date
-
-Store Comparison
-
-Scenario Table (Debug View)
-
-💼 Business Impact
-💰 Pricing insights
-
-Identify price points that maximize revenue
-
-Detect stores that respond differently to price
-
-🛒 Promo Optimization
-
-Quantify promotion impact on sales & ABV
-
-Avoid “over-discounting” low-value customers
-
-🏬 Store Segmentation
-
-High-elasticity vs inelastic store grouping
-
-Tailored pricing by cluster
-
-📉 Risk Analysis
-
-Revenue downside for price increases
-
-Footfall sensitivity evaluation
-
-🎯 Executive-ready
-
-This project includes a CFO summary, dashboard commentary, and actionable pricing recommendations.
-
-🌐 Author
-Ahmet Ünlü
-Data Analyst | Retail Analytics | Pricing Models | Power BI | Python
-📍 NRW, Germany
-🔗 LinkedIn: (https://www.linkedin.com/in/ahmet-unlu-115121237/)
 🖼 Power BI Dashboard – Screenshots
 Full Dashboard Overview
 
