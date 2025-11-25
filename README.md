@@ -130,7 +130,7 @@ Output: `data/segments/store_segments.csv`
 ![Dashboard Overview]  (model2-demand-elasticity/powerbi/KPI Cards.png)  
 
 ### KPI Cards  
-![KPI Cards](model2-demand-elasticity/powerbi/screenshots/kpi_cards.png)
+![KPI Cards](model2-demand-elasticity/powerbi/kpi_cards.png)
 
 ### Scenario Controls (Slicers)  
 ![Slicers](model2-demand-elasticity/powerbi/screenshots/slicers.png)
