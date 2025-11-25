@@ -1,150 +1,189 @@
 # 📊 Model 2 – Demand Elasticity & Pricing Scenario Simulator  
-### Python (Statsmodels) + Power BI Dashboard + Store Clustering  
+### Python (Statsmodels) + Power BI Dashboard + Store Clustering
 
 This repository contains a complete **pricing & demand analytics system**, combining  
 **Python-based Log Elasticity Modeling** with a fully interactive **Power BI Scenario Simulator**.
 
 It is designed for retail, FMCG, e-commerce, and any business where **price, promotion, and footfall** impact revenue.
 
+---
+
 # 🔧 Key Features
 
-### ✅ **1. Log-Elasticity Demand Model (Python, Statsmodels)**
+### ✅ 1. Log-Elasticity Demand Model (Python, Statsmodels)
+
 - Estimates **price elasticity of demand**
 - Captures effects of:
   - Price change (log-log regression)
   - Footfall
-  - Promotions (binary)
-  - Store fixed-effects (optional)
+  - Promotions
+  - Store fixed-effects
 - Produces:
   - Baseline predictions  
   - Elasticity coefficients  
   - Daily sales forecasts  
 
-### ✅ **2. Scenario Simulator (Python → Power BI)**
-Python generates all scenarios:
+---
 
-| Variable | Range |
-|---------|--------|
-| PriceChange | –30% → +30% |
-| FootfallChange | –10% / 0 / +10% |
-| PromoOverride | 0 / 1 |
+### ✅ 2. Scenario Simulator (Python → Power BI)
 
-For *every combination*, model predicts:
+Python generates all combinations of scenarios automatically.
 
-- `Sales_Pred`
-- `Revenue_Pred`
-- `ABV_Scn` (Average Basket Value)
-- `ScenarioID`
+**Scenario inputs**
 
-Output is saved as:
-data/scenarios/model2_scenarios.csv
+- `PriceChange`: –30% → +30%  
+- `FootfallChange`: –10% / 0 / +10%  
+- `PromoOverride`: 0 / 1  
 
-Power BI uses this file to allow **real-time scenario testing**.
+For every scenario, the model outputs:
 
-### ✅ **3. Store-Level Segmentation (Clustering)**
-KMeans algorithm identifies distinct store groups:
+- `Sales_Pred`  
+- `Revenue_Pred`  
+- `ABV_Scn` (Average Basket Value)  
+- `ScenarioID`  
 
-- **High elasticity stores** – sensitive to price drops  
-- **Inelastic stores** – stable demand  
-- **Promo-dependent stores** – discount-driven traffic  
+Output file: `data/scenarios/model2_scenarios.csv`  
 
-Output saved as:
-data/segments/store_segments.csv
+Power BI reads this file to enable **real-time pricing scenarios**.
 
-### ✅ **4. Power BI Dashboard (Final Output)**  
-Interactive retail pricing dashboard showing:
+---
+
+### ✅ 3. Store-Level Segmentation (Clustering)
+
+KMeans identifies store groups:
+
+- High elasticity stores  
+- Inelastic stores  
+- Promo-driven stores  
+
+Output: `data/segments/store_segments.csv`
+
+---
+
+### ✅ 4. Power BI Dashboard (Final Output)
+
+Includes:
 
 - Price elasticity KPIs  
 - Scenario simulator (price slider / promo toggle)  
-- Daily sales & revenue trend  
+- Revenue & sales trends  
 - Store comparison  
 - ABV dynamics  
-- Executive summary insights  
+- CFO-ready insights  
 
-File:
-powerbi/Model2_Dashboard.pbix
+Power BI file: `powerbi/Model2_Dashboard.pbix`
+
+---
 
 # 🧠 Technical Architecture
 
-Python Pipeline
-│
-├── data/raw/ → train.csv, store.csv
-├── scripts/
-│ ├── demand_model.py (log elasticity model)
-│ ├── scenario_simulator.py (single scenario engine)
-│ ├── scenario_generator.py (grid generator)
-│ └── store_clustering.py (KMeans segmentation)
-│
-├── data/scenarios/ → model2_scenarios.csv
-├── data/segments/ → store_segments.csv
-└── powerbi/ → Interactive dashboard
+**Python pipeline structure**
+
+- `data/raw/`
+  - `train.csv`
+  - `store.csv`
+- `scripts/`
+  - `demand_model.py` – log elasticity model
+  - `scenario_simulator.py` – single scenario engine
+  - `scenario_generator.py` – full scenario grid generator
+  - `store_clustering.py` – KMeans segmentation
+- `data/scenarios/`
+  - `model2_scenarios.csv`
+- `data/segments/`
+  - `store_segments.csv`
+- `powerbi/`
+  - `Model2_Dashboard.pbix`
+  - `screenshots/`
+
+---
 
 # 🚀 How to Run Locally
 
-### 1. Create environment  
-pip install -r requirements.txt
+### 1. Install dependencies
 
-2. Generate elasticity model + scenario outputs
+Terminal / command line:
 
-3. 
-python scripts/scenario_generator.py
-Result (CSV):
-data/scenarios/model2_scenarios.csv
-4.
-5. Generate store segments
-python scripts/store_clustering.py
-6.
-7. Load Power BI
-powerbi/Model2_Dashboard.pbix
-Replace dataset path if needed.
+- `pip install -r requirements.txt`
 
+### 2. Generate elasticity model + scenarios
 
-🖼 Power BI Dashboard – Screenshots
-Full Dashboard Overview
+- `python scripts/scenario_generator.py`  
 
-KPI Cards
+Output: `data/scenarios/model2_scenarios.csv`
 
-Scenario Controls (Slicers)
+### 3. Generate store segments
 
-Sales Trend by Date
+- `python scripts/store_clustering.py`  
 
-Store Comparison
+Output: `data/segments/store_segments.csv`
 
-Scenario Table (Debug View)
+### 4. Open Power BI dashboard
 
-💼 Business Impact
+- Open `powerbi/Model2_Dashboard.pbix`
+- Update dataset paths if needed.
 
-💰 Pricing Insights
+---
 
-Identify price points that maximize revenue
+# 🖼 Power BI Dashboard – Screenshots
 
-Detect store-level sensitivity differences
+### Full Dashboard Overview  
+![Dashboard Overview](powerbi/screenshots/dashboard_overview.png)
 
-🛒 Promo Optimization
+### KPI Cards  
+![KPI Cards](powerbi/screenshots/kpi_cards.png)
 
-Measure uplift of promotions
+### Scenario Controls (Slicers)  
+![Slicers](powerbi/screenshots/slicers.png)
 
-Prevent margin loss from over-discounting
+### Sales Trend by Date  
+![Trend](powerbi/screenshots/scenario_trend.png)
 
-🏬 Store Segmentation
+### Store Comparison  
+![Store Comparison](powerbi/screenshots/store_comparison.png)
 
-High vs low elasticity stores
+### Scenario Table (Debug View)  
+![Table](powerbi/screenshots/table_view.png)
 
-Cluster-based pricing
+---
 
-📉 Risk Analysis
+# 💼 Business Impact
 
-Revenue downside of price increases
+### 💰 Pricing Insights
 
-Footfall dependence
+- Identify price points that maximize revenue  
+- Detect store-level sensitivity differences  
 
-🎯 Executive-Ready Dashboard
+### 🛒 Promo Optimization
 
-Includes CFO summary + clear business recommendations.
+- Measure uplift of promotions  
+- Prevent margin loss from over-discounting  
 
-🌐 Author
+### 🏬 Store Segmentation
 
-Ahmet Ünlü
-Data Analyst | Retail Analytics | Pricing Models | Power BI | Python
-📍 NRW, Germany
+- High vs low elasticity stores  
+- Cluster-based pricing strategies  
+
+### 📉 Risk Analysis
+
+- Revenue downside of price increases  
+- Footfall dependence  
+
+### 🎯 Executive-Ready Dashboard
+
+Includes CFO summary and clear business recommendations.
+
+---
+
+# 🌐 Author
+
+**Ahmet Ünlü**  
+Data Analyst · Retail Analytics · Pricing Models · Power BI · Python  
+📍 NRW, Germany  
 🔗 LinkedIn: https://www.linkedin.com/in/ahmet-unlu-115121237/
+
+---
+
+# 📄 License
+
+MIT License
+
