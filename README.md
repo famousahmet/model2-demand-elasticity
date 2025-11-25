@@ -83,13 +83,18 @@ Python Pipeline
 
 ### 1. Create environment  
 pip install -r requirements.txt
+
 2. Generate elasticity model + scenario outputs
+
+3. 
 python scripts/scenario_generator.py
 Result (CSV):
 data/scenarios/model2_scenarios.csv
-3. Generate store segments
+4.
+5. Generate store segments
 python scripts/store_clustering.py
-4. Load Power BI
+6.
+7. Load Power BI
 powerbi/Model2_Dashboard.pbix
 Replace dataset path if needed.
 
@@ -108,6 +113,7 @@ Store Comparison
 Scenario Table (Debug View)
 
 💼 Business Impact
+
 💰 Pricing Insights
 
 Identify price points that maximize revenue
