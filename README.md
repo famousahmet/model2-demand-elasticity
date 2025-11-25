@@ -127,23 +127,22 @@ Output: `data/segments/store_segments.csv`
 # 🖼 Power BI Dashboard – Screenshots
 
 ### Full Dashboard Overview  
-
+![Dashboard Overview](model2-demand-elasticity/powerbi/screenshots/dashboard_overview.png)
 
 ### KPI Cards  
-
+![KPI Cards](model2-demand-elasticity/powerbi/screenshots/kpi_cards.png)
 
 ### Scenario Controls (Slicers)  
-
+![Slicers](model2-demand-elasticity/powerbi/screenshots/slicers.png)
 
 ### Sales Trend by Date  
-
+![Trend](model2-demand-elasticity/powerbi/screenshots/scenario_trend.png)
 
 ### Store Comparison  
-
+![Store Comparison](model2-demand-elasticity/powerbi/screenshots/store_comparison.png)
 
 ### Scenario Table (Debug View)  
-
-
+![Table](model2-demand-elasticity/powerbi/screenshots/table_view.png)
 ---
 
 # 💼 Business Impact
