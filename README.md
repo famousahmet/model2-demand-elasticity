@@ -127,22 +127,22 @@ Output: `data/segments/store_segments.csv`
 # 🖼 Power BI Dashboard – Screenshots
 
 ### Full Dashboard Overview  
-![Dashboard Overview]
+
 
 ### KPI Cards  
-![KPI Cards](powerbi/screenshots/kpi_cards.png)
+
 
 ### Scenario Controls (Slicers)  
-![Slicers]
+
 
 ### Sales Trend by Date  
-![Trend]
+
 
 ### Store Comparison  
-![Store Comparison]
+
 
 ### Scenario Table (Debug View)  
-![Table]
+
 
 ---
 
