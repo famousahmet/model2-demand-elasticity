@@ -82,7 +82,6 @@ Python Pipeline
 # 🚀 How to Run Locally
 
 ### 1. Create environment  
-```bash
 pip install -r requirements.txt
 2. Generate elasticity model + scenario outputs
 python scripts/scenario_generator.py
@@ -141,3 +140,51 @@ Ahmet Ünlü
 Data Analyst | Retail Analytics | Pricing Models | Power BI | Python
 📍 NRW, Germany
 🔗 LinkedIn: (https://www.linkedin.com/in/ahmet-unlu-115121237/)
+🖼 Power BI Dashboard – Screenshots
+Full Dashboard Overview
+
+KPI Cards
+
+Scenario Controls (Slicers)
+
+Sales Trend by Date
+
+Store Comparison
+
+Scenario Table (Debug View)
+
+💼 Business Impact
+💰 Pricing Insights
+
+Identify price points that maximize revenue
+
+Detect store-level sensitivity differences
+
+🛒 Promo Optimization
+
+Measure uplift of promotions
+
+Prevent margin loss from over-discounting
+
+🏬 Store Segmentation
+
+High vs low elasticity stores
+
+Cluster-based pricing
+
+📉 Risk Analysis
+
+Revenue downside of price increases
+
+Footfall dependence
+
+🎯 Executive-Ready Dashboard
+
+Includes CFO summary + clear business recommendations.
+
+🌐 Author
+
+Ahmet Ünlü
+Data Analyst | Retail Analytics | Pricing Models | Power BI | Python
+📍 NRW, Germany
+🔗 LinkedIn: https://www.linkedin.com/in/ahmet-unlu-115121237/
