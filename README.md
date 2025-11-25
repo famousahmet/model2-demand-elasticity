@@ -141,9 +141,6 @@ Output: `data/segments/store_segments.csv`
 ### Store Comparison  
 ![Store Comparison](model2-demand-elasticity/powerbi/Store%20Comparison.png)
 
-### Scenario Table (Debug View)  
-![Table](model2-demand-elasticity/powerbi/table.png)
-
 
 # 💼 Business Impact
 
